@@ -1,10 +1,5 @@
 
-AOS.init({
-    duration: 1000,   // animation duration (ms)
-    once: true,       // animation happens once
-    offset: 100,      // distance before animation starts
-    easing: "ease-in-out"
-  });
+
 
 //HOME PAGE HERO SECTION
 const sliderContainer =document.querySelector('.slider');
