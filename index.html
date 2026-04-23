@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Home</title>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css"/>
+  <link rel="stylesheet" href="narbar.css">
+  <link rel="stylesheet" href="responsiveness.css">
+  <link rel="stylesheet" href="footer.css">
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js" defer></script>
+
+  <script src="main.js" defer></script>
+  <script src="menu.js" defer></script>
+
+</head>
+<body>
+    <header>
+       
+              <!--overlay-->
+              <div class="menu-overlay" id="menuOverlay"></div>
+              <!--NAVBAR ───────────────────────────────────── -->
+              <nav id="mainNav" class="navbar">
+                <div class="navbar__inner">
+                  <a href="index.html" class="navbar__logo"><img src="images/logo1.jpeg" alt="Logo" width="50" height="50"><span>PALLISA P.S.S</span></a>
+
+                  <ul class="navbar__links">
+                    
+                    <li class="navbar__item">
+                      <a href="index.html" class="navbar__link">Home</a>
+                    </li>
+
+
+                    <li class="navbar__item dropdown">
+                      <a href="#about" class="navbar__link">About Us
+                        <i class="fa fa-chevron-down chevron"></i>
+                      </a>
+                      <div class="dropdown__menu">
+                        <a href="#about"><i class="fa fa-home"></i>Our School</a>
+                        <a href="#about"><i class="fa fa-info-circle"></i>Mission & Vision</a>
+                        <a href="#about"><i class="fa fa-users"></i>Administration</a>
+                        <a href="#about"><i class="fa fa-history"></i>History</a>
+                      </div>
+                    </li>
+
+                    <li class="navbar__item dropdown">
+                      <a href="#academics" class="navbar__link">Academics
+                        <i class="fa fa-chevron-down chevron"></i>
+                      </a>
+
+                      <div class="dropdown__menu">
+                        <a href="#about"><i class="fa fa-home"></i>Admissions</a>
+                        <a href="#about"><i class="fa fa-info-circle"></i>Games & Sports</a>
+                      </div>
+                    </li>
+
+                      <li class="navbar__item dropdown">
+                          <a href="#academics" class="navbar__link">Contact Us
+                            <i class="fa fa-chevron-down chevron"></i>
+                          </a>
+                          <div class="dropdown__menu">
+
+                          <a href="tel:+256777891441"><i class="fa fa-phone"></i>Call Us</a>
+                          <a href="sms:+256 782 620 783"><i class="fa fa-envelope" aria-hidden="true"></i>Message Us</a>
+                          <a href="emailto:pallisaprogressivess@gmail.com"><i class="fa fa-envelope" aria-hidden="true"></i>Email Us</a>
+                          </div>
+                        </li>
+
+                    
+
+                    <li class="navbar__item dropdown">
+                      <a href="#community" class="navbar__link">Community
+                        <i class="fa fa-chevron-down chevron"></i>
+                      </a>
+                      <div class="dropdown__menu">
+                        <div class="dropdown__header">School life</div>
+                        <a href="#community"><i class="fa fa-picture-o"></i>Gallery</a>
+                        <a href="#community"><i class="fa fa-briefcase"></i>Staff Portal</a>
+                      </div>
+                    </li>
+                  </ul>
+
+                  <div class="navbar__actions">
+                    <button class="navbar__toggle" id="hamburger" aria-label="Toggle menu" aria-expanded="false">
+                      <span></span>
+                      <span></span>
+                      <span></span>
+                    </button>
+                  </div>
+                </div>
+              </nav>
+
+                 
+                 <!-- MOBILE MENU WITH DROPDOWN MENUS -->
+              <div class="mobile-menu" id="mobileMenu" hidden>
+
+                <!-- Home Link  -->
+                <a href="index.html" class="mobile-dropdown__link" id="link1" >
+                  Home
+                </a>
+
+                <!-- About Us -->
+                <div class="mobile-dropdown">
+                  <button class="mobile-dropdown__trigger">
+                    About Us <i class="fa fa-chevron-down mobile-chevron"></i>
+                  </button>
+                  <div class="mobile-dropdown__menu">
+                    <a href="#about" class="mobile-dropdown__link"><i class="fa fa-home"></i> Our School</a>
+                    <a href="#about" class="mobile-dropdown__link"><i class="fa fa-info-circle"></i> Mission & Vision</a>
+                    <a href="#about" class="mobile-dropdown__link"><i class="fa fa-users"></i> Administration</a>
+                    <a href="#about" class="mobile-dropdown__link"><i class="fa fa-history"></i> History</a>
+                  </div>
+                </div>
+
+                <!-- Academics -->
+                <div class="mobile-dropdown">
+                  <button class="mobile-dropdown__trigger">
+                    Academics <i class="fa fa-chevron-down mobile-chevron"></i>
+                  </button>
+                  <div class="mobile-dropdown__menu">
+                    <a href="#about" class="mobile-dropdown__link"><i class="fa fa-home"></i> Admissions</a>
+                    <a href="#about" class="mobile-dropdown__link"><i class="fa fa-info-circle"></i> Games & Sports</a>
+                  </div>
+                </div>
+
+                <!-- Contact Us  -->
+                <div class="mobile-dropdown">
+                  <button class="mobile-dropdown__trigger">
+                    Contact Us <i class="fa fa-chevron-down mobile-chevron"></i>
+                  </button>
+                  <div class="mobile-dropdown__menu">
+                    <a href="tel:+256777891441" class="mobile-dropdown__link"><i class="fa fa-phone"></i> Call Us</a>
+                    <a href="sms:+256782620783" class="mobile-dropdown__link"><i class="fa fa-comment"></i> Message Us</a>
+                    <a href="mailto:pallisaprogressivess@gmail.com" class="mobile-dropdown__link"><i class="fa fa-envelope"></i> Email Us</a>
+                  </div>
+                </div>
+
+                <!-- Community -->
+                <div class="mobile-dropdown">
+                  <button class="mobile-dropdown__trigger">
+                    Community <i class="fa fa-chevron-down mobile-chevron"></i>
+                  </button>
+                  <div class="mobile-dropdown__menu">
+                    <a href="#community" class="mobile-dropdown__link"><i class="fa fa-picture-o"></i> Gallery</a>
+                    <a href="#community" class="mobile-dropdown__link"><i class="fa fa-briefcase"></i> Staff Portal</a>
+                  </div>
+                </div>
+
+              </div>
+    </header>
+ 
+
+
+  
+  <!--MAIN ─────────────────────────────────────── -->
+<main>
+
+   <div class="Homepage__hero__section">
+
+    <span class="hero-badge"><h1><span id="heroBage2">PALLISA</span> PROGRESSIVE SECONDARY SCHOOL</h1></span>
+
+    <div class="slider" id="slider">
+      <div class="overlay"></div>
+      <div class="slides">
+           <img src="/images/adimBlock.jpg" alt="image1" class="slide active">
+           <div class="caption active">
+              <h3>A Vibrant Learning Environment that Values Excellence</h3>
+               <p>Inspiring students to achieve excellence in academics,sports,and character</p>
+              
+           </div>
+           <img src="/images/researching-laboratory.jpg" alt="image2" class="slide">
+           <div class="caption">
+              <h3>A Science Based 'O'&'A' Level School Around Town</h3>
+              <p>Where young minds are shaped,talents are discovered and futures are built</p>
+           
+           </div>
+           <img src="/images/sports3.jpg" alt="image2" class="slide">
+           <div class="caption">
+              <h3>A Conducive Learning Environment for Your Child's Success</h3>
+              <p>Nurturing curiosity,fostering growth, and guiding students towards their dreams.</p>
+             
+           </div>
+      </div>
+
+    </div>
+
+    
+  
+      <!-- FLOATING BUTTONS -->
+    <div class="hero-floating-buttons">
+
+        <a href="academics.html#admmissions"
+           class="btn-primary">
+           Apply for Admission <i class="fa fa-arrow-right" aria-hidden="true"></i>
+        </a>
+    </div>
+
+    <!-- HERO FEATURE STRIP -->
+      <div class="hero-features">
+      <div class="feature">
+      <div class="icon">
+      <i class="fa-solid fa-graduation-cap"></i>
+      </div>
+      <div class="feature-text">
+      <span>Academic</span>
+      <h3>Excellence</h3>
+      </div>
+      </div>
+
+
+      <div class="feature">
+      <div class="icon">
+      <i class="fa-solid fa-award"></i>
+      </div>
+      <div class="feature-text">
+      <span>Holistic</span>
+      <h3>Development</h3>
+      </div>
+      </div>
+
+
+      <div class="feature">
+      <div class="icon">
+      <i class="fa-solid fa-users"></i>
+      </div>
+      <div class="feature-text">
+      <span>Strong</span>
+      <h3>Community</h3>
+      </div>
+      </div>
+      </div>
+
+ </div>
+
+
+ <!--HEADTEACHER WELCOME REMARKS-->
+ <section class="quick_word_from_headteacher container" data-aos="fade-up">
+    <div class="content__left">
+      <img src="/images/waiswa3.jpg" alt="HEADTEACHER">
+    </div>
+
+    <!--Content left-->
+    <div class="content__right">
+      <div class="quick__badge"><i class="fa-solid fa-wand-magic-sparkles"></i>A Quick Word</div>
+      <div class="quick__message">
+
+        <h1>From the HMs Office</h1>
+
+        <p>At Pallisa Progressive, we are committed to creating a learning environment where every student feels valued and supported.
+           Our teachers work closely with learners to help them build confidence, character, and academic excellence.
+        </p>
+
+        <p>We believe that education is not only about passing examinations,
+           but also about discovering purpose and preparing for life beyond the classroom. 
+           Our students are encouraged to think critically, lead responsibly, and serve their communities.</p>
+      </div>
+      <div class="quick__quotation">
+        <p>"Here at Pallisa Progressive, every learner matters — and every success story begins with belief"</p>
+        <h3>Mr. Waiswa Fred</h3>
+        <p>HM Pallisa Progressive ss</p>
+      </div>
+    </div>
+ </section>
+
+    <!--ABOUT PALLISA SS-->
+    <section class="about__us__section" data-aos="fade-up">
+            <div class="about_us_content_left">
+                <div class="quick__badge"><i class="fa-solid fa-wand-magic-sparkles"></i>About Pallisa Progressive</div>
+                <h1>Building <span id="heroBage2">Character</span>, Nurturing Excellence</h1>
+
+                <p>What started as a vision to create a center of academic excellence has grown into a legacy of 
+                  nurturing well-rounded individuals who excel not only in academics but also in character, leadership, and service to Pallisa.
+                </p>
+
+                <p>Today, Pallisa Progressive  remains committed to our founding principles: providing a safe,
+                  nurturing environment where every student can discover their potential and reach for greater horizons.
+                    Our experienced faculty, modern facilities, and comprehensive curriculum ensure that each student receives the best possible foundation for their future.
+                </p>
+            </div>
+
+            <div class="about__us__content__right">
+              <div class="imageContainer">
+                <img src="/images/researching-laboratory.jpg" alt="Libray">
+
+                <div class="Year__Badge">
+                  <h1>10+</h1>
+                  <span>Years of Experience</span>
+                </div>
+              </div>
+            </div>
+
+    </section>
+
+    <!--OUR APPROACH-->
+<section class="Our_approah_section container" data-aos="fade-up">
+        <div class="our__approach_header">
+          <div class="quick__badge"><i class="fa-solid fa-wand-magic-sparkles"></i>Our Approach</div>
+          <h1>Academic <span id="heroBage2">Programs</span></h1>
+          <p>Through a strong curriculum and practical learning, Pallisa Progressive S.S equips learners to excel in national and global spheres.</p>
+        </div>
+
+        <div class="schoolSections">
+                <div class="o__level">
+                  <div class="levelicon" id="levelicon1">
+                    <i class="fa-solid fa-award"></i>
+                  </div>
+                  <span class="span">O Level</span>
+                  <p>Our O’ Level programme follows the new competency-based UCE curriculum, 
+                    building strong foundations in sciences, arts, and technology.
+                    Learners develop practical skills alongside academic knowledge. With <strong>UNEB CENTER No.U4050 O & A'LEVEL</strong>
+                  </p>
+                  <p>
+                    The curriculum emphasises critical thinking, projects, 
+                    and real-life application rather than rote memorisation.
+                    Students choose electives that match their interests and future study paths.
+                  </p>
+                </div>
+
+                <div class="A__level">
+                  <div class="levelicon" id="levelicon2">
+                    <i class="fa-solid fa-graduation-cap"></i>
+                  </div>
+                  <span class="span">A Level</span>
+                  <p>Our A’ Level programme follows the Uganda Advanced Certificate of Education (UACE) framework, 
+                    offering a balanced mix of sciences, arts, and commerce subjects. 
+                    Students specialise in subject combinations that align with their academic goals and future careers.
+                  </p>
+                  <p>
+                    The curriculum emphasises deep understanding and analytical skills,
+                    preparing learners for university studies,
+                    professional pathways, and real-world challenges through critical thinking, 
+                    research, and practical application.
+                  </p>
+                
+                </div>
+        </div>
+
+        <div class="our__facilities">
+            <div class="facility">
+              <div class="facility_icon"><i class="fa-solid fa-lightbulb"></i></div>
+              <h3>Modern Methods</h3>
+              <p>Interactive and Technology-enhanced learning approaches</p>
+            </div>
+          <div class="facility">
+            <div class="facility_icon"><i class="fa-solid fa-users"></i></div>
+            <h3>Small Classes</h3>
+            <p>Personalised Attenntion and Individual Support</p>
+          </div>
+              <div class="facility">
+                <div class="facility_icon"><i class="fa-solid fa-wand-magic-sparkles"></i></div>
+                <h3>Continuous Assessments</h3>
+                <p>Regular evaluation and feedback for improvement</p>
+              </div>
+          <div class="facility">
+            <div class="facility_icon"><i class="fa-solid fa-award"></i></div>
+            <h3>Qualified Teachers</h3>
+            <p>Experienced educators committed to excellence</p>
+          </div>
+
+        </div>
+
+</section>
+
+
+<!--MISSION,MOTTO,AND OTHERS-->
+
+<section class="mission_motto_vision_section container" data-aos="fade-up">
+      <div class="mission_header">
+        <div class="quick__badge"><i class="fa-solid fa-wand-magic-sparkles"></i>Our Impact</div>
+        <h1>Guiding Principles for Greater Excellence</h1>
+          <div class="princile_guildline_statement">
+              
+              <p>Our values shape character, inspire purpose, and define every learner’s journey.</p>
+          </div>
+      </div>
+
+      <div class="principlie_grid_Container">
+        <div class="principles">
+          <div class="principle_icon"><i class="fa-solid fa-bullseye"></i></div>
+          <h2>Our Motto</h2>
+          <p>Building Destiny Solutions</p>
+        </div>
+        <div class="principles">
+          <div class="principle_icon"><i class="fa-solid fa-bullseye"></i></div>
+          <h2>Our Vision</h2>
+          <p>To provide innovative,scientific,comprehensive integral and global career</p>
+        </div>
+        <div class="principles">
+          <div class="principle_icon"><i class="fa-solid fa-bullseye"></i></div>
+          <h2>Our Mission</h2>
+          <p>To be a center of scientific and technological excellence of high quality education</p>
+        </div>
+        <div class="principles">
+          <div class="principle_icon"><i class="fa-solid fa-bullseye"></i></div>
+          <h2>Our Values</h2>
+          <p>God Fearing, Discipline, Self-Drive, High self-esteem.</p>
+        </div>
+        
+      </div>
+</section>
+
+
+<section class="academic_section container" data-aos="fade-up">
+        <div class="quick__badge"><i class="fa-solid fa-wand-magic-sparkles"></i> Curriculum</div>
+        <h2 class="academic_title">Academic <span id="heroBage2">Overview</span></h2>
+
+          <!-- Description -->
+          <p class="academic_desc">
+            Pallisa Progressive Secondary School offer O’ Level and A’ Level programs under the new Uganda National Curriculum,
+            achieving strong results across sciences, humanities, and technical subjects. Its qualified teachers provide
+            personalized guidance to help every student reach their academic goals.
+          </p>
+
+          <!-- Cards -->
+          <div class="academic_grid">
+
+            <!-- Sciences -->
+            <div class="academic_card">
+                <div class="academic_icon">
+                  <i class="fa-solid fa-flask"></i>
+                </div>
+                <h3>Sciences</h3>
+                <ul>
+                  <li>Mathematics</li>
+                  <li>Biology</li>
+                  <li>Chemistry</li>
+                  <li>Physics</li>
+                  <li>Computer Studies</li>
+                  <li>Physical Education</li>
+                  <li>Agriculture</li>
+                
+                </ul>
+            </div>
+
+            <!-- Arts -->
+            <div class="academic_card">
+                <div class="academic_icon">
+                  <i class="fa-solid fa-palette"></i>
+                </div>
+                <h3>Arts</h3>
+                <ul>
+                  <li>English Language</li>
+                  <li>Geography</li>
+                  <li>History & Political Education</li>
+                  <li>Divinity / Religious Studies</li>
+                  <li>Fine Art</li>
+                  <li>Literature in English</li>
+                  <li>Entrepreneurship</li>
+                  <li>Performing Arts</li>
+                  <li>Languages</li>
+                  <li>Economics</li>
+                </ul>
+            </div>
+
+            <!-- Subsidiaries -->
+            <div class="academic_card">
+                  <div class="academic_icon">
+                    <i class="fa-solid fa-chart-line"></i>
+                  </div>
+                  <h3>Subsidiaries</h3>
+                <ul>
+                  <li>Subsidiary Mathematics</li>
+                  <li>General Paper</li>
+                  <li>Subsidiary ICT</li>
+                </ul>
+            </div>
+
+          </div>
+
+</section>
+
+
+<section class="call_to_action" data-aos="fade-up">
+     <div class="call_to_action_left_side">
+      <div class="quick__badge"><i class="fa-solid fa-wand-magic-sparkles"></i>Admission Inquiry</div>
+      <h2>Ready to join a community that nutures? <span id="changingText"></span></h2>
+      <p>
+        Take the first step toward an inspiring academic journey. 
+        Apply today or schedule a campus visit to experience Pallisa Progressive S.S firsthand.
+      </p>
+  </div>
+
+  <div class="call_to_action_right_side">
+    <div class="call_to_action_container">
+      <h1>Apply for Admission</h1>
+      <p>Fill out the official application form to begin your journey at Pallisa Progressive SS.</p>
+
+      <!--CALL TO ACTION BUTTON-->
+      <button><a href="academics.html">Apply Now<i class="fa fa-paper-plane-o" aria-hidden="true"></i></a></button>
+      <span>______________Or______________</span>
+      <p><a href="academics.html"><i class="fa fa-pencil-square-o" aria-hidden="true"></i>Make an inquiry instead</a></p>
+    </div>
+  </div>
+
+</section>
+</main>
+</body>
+</html>
