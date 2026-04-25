@@ -1,3 +1,4 @@
+
 // DOM Elements
 const navbar = document.getElementById('mainNav');
 const hamburger = document.getElementById('hamburger');
@@ -64,7 +65,7 @@ const menuOverlay = document.getElementById('menuOverlay');
         function closeMenu() {
           closeTimer = setTimeout(() => {
             dropdownMenu.classList.remove('open');
-          }, 100);
+          }, 200);
         }
 
         item.addEventListener('mouseenter', openMenu);
@@ -130,3 +131,6 @@ menuOverlay?.addEventListener('click',closeMobileMenu);
     } else {
       init();
     }
+
+
+    

@@ -7,12 +7,13 @@
 
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
-  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <link rel="stylesheet" href="style.css"/>
   <link rel="stylesheet" href="narbar.css">
   <link rel="stylesheet" href="responsiveness.css">
   <link rel="stylesheet" href="footer.css">
-  
+  <script src="main.js" defer></script>
+  <script src="menu.js" defer></script>
+
 </head>
 <body>
     <header>
@@ -154,83 +155,79 @@
   
   <!--MAIN ─────────────────────────────────────── -->
 <main>
+<!-- HERO SECTION -->
+<div class="hero-section">
+  <div class="hero-content">
+    <!-- Title -->
+    <h1 class="hero-title">
+      <span class="highlight">
+        Pallisa
+      </span> Progressive Secondary School
+    </h1>
 
-   <div class="Homepage__hero__section">
+    <!-- Description -->
+    <p class="hero-description">
+      Nurturing academic excellence, moral integrity, and leadership since 2019. 
+      We prepare students to become confident, responsible, and successful individuals.
+    </p>
 
-    <span class="hero-badge"><h1><span id="heroBage2">PALLISA</span> PROGRESSIVE SECONDARY SCHOOL</h1></span>
+    <!-- CTA Button -->
+    <a href="academics.html#admmissions" class="hero-btn">
+      Apply for Admission 
+      <i class="fa-solid fa-arrow-right"></i>
+    </a>
 
-    <div class="slider" id="slider">
-      <div class="overlay"></div>
-      <div class="slides">
-           <img src="images/adimBlock.jpg" alt="image1" class="slide active">
-           <div class="caption active">
-              <h3>A Vibrant Learning Environment that Values Excellence</h3>
-               <p>Inspiring students to achieve excellence in academics,sports,and character</p>
-              
-           </div>
-           <img src="images/researching-laboratory.jpg" alt="image2" class="slide">
-           <div class="caption">
-              <h3>A Science Based 'O'&'A' Level School Around Town</h3>
-              <p>Where young minds are shaped,talents are discovered and futures are built</p>
-           
-           </div>
-           <img src="images/sports3.jpg" alt="image2" class="slide">
-           <div class="caption">
-              <h3>A Conducive Learning Environment for Your Child's Success</h3>
-              <p>Nurturing curiosity,fostering growth, and guiding students towards their dreams.</p>
-             
-           </div>
+  </div>
+
+  <!-- FEATURE STRIP -->
+  <div class="hero-features">
+
+    <!-- Feature 1 -->
+    <div class="feature-item">
+
+      <div class="feature-icon">
+        <i class="fa-solid fa-graduation-cap"></i>
+      </div>
+
+      <div class="feature-text">
+        <span class="label">Academic</span>
+        <span class="value">Excellence</span>
       </div>
 
     </div>
 
-    
-  
-      <!-- FLOATING BUTTONS -->
-    <div class="hero-floating-buttons">
+    <!-- Feature 2 -->
+    <div class="feature-item">
 
-        <a href="academics.html#admmissions"
-           class="btn-primary">
-           Apply for Admission <i class="fa fa-arrow-right" aria-hidden="true"></i>
-        </a>
+      <div class="feature-icon">
+        <i class="fa-solid fa-award"></i>
+      </div>
+
+      <div class="feature-text">
+        <span class="label">Holistic</span>
+        <span class="value">Development</span>
+      </div>
+
     </div>
 
-    <!-- HERO FEATURE STRIP -->
-      <div class="hero-features">
-      <div class="feature">
-      <div class="icon">
-      <i class="fa-solid fa-graduation-cap"></i>
+    <!-- Feature 3 -->
+    <div class="feature-item">
+
+      <div class="feature-icon">
+        <i class="fa-solid fa-users"></i>
       </div>
+
       <div class="feature-text">
-      <span>Academic</span>
-      <h3>Excellence</h3>
-      </div>
-      </div>
-
-
-      <div class="feature">
-      <div class="icon">
-      <i class="fa-solid fa-award"></i>
-      </div>
-      <div class="feature-text">
-      <span>Holistic</span>
-      <h3>Development</h3>
-      </div>
+        <span class="label">Strong</span>
+        <span class="value">Community</span>
       </div>
 
+    </div>
 
-      <div class="feature">
-      <div class="icon">
-      <i class="fa-solid fa-users"></i>
-      </div>
-      <div class="feature-text">
-      <span>Strong</span>
-      <h3>Community</h3>
-      </div>
-      </div>
-      </div>
+  </div>
 
- </div>
+</div>
+
 
 
  <!--HEADTEACHER WELCOME REMARKS-->
@@ -292,7 +289,7 @@
     </section>
 
     <!--OUR APPROACH-->
-<section class="Our_approah_section container" >
+<section class="Our_approah_section container">
         <div class="our__approach_header">
           <div class="quick__badge"><i class="fa-solid fa-wand-magic-sparkles"></i>Our Approach</div>
           <h1>Academic <span id="heroBage2">Programs</span></h1>
@@ -364,7 +361,7 @@
 
 <!--MISSION,MOTTO,AND OTHERS-->
 
-<section class="mission_motto_vision_section container">
+<section class="mission_motto_vision_section container" >
       <div class="mission_header">
         <div class="quick__badge"><i class="fa-solid fa-wand-magic-sparkles"></i>Our Impact</div>
         <h1>Guiding Principles for Greater Excellence</h1>
@@ -470,7 +467,7 @@
 </section>
 
 
-<section class="call_to_action">
+<section class="call_to_action container">
      <div class="call_to_action_left_side">
       <div class="quick__badge"><i class="fa-solid fa-wand-magic-sparkles"></i>Admission Inquiry</div>
       <h2>Ready to join a community that nutures? <span id="changingText"></span></h2>
@@ -493,13 +490,499 @@
   </div>
 
 </section>
+
+
+
+<section class="extra_curricular_section container">
+
+  <div class="extra_header">
+    <div class="extra_title_side">
+        <div class="quick__badge">
+          <i class="fa-solid fa-wand-magic-sparkles"></i>Beyond the classroom
+        </div>
+        <h2 class="extra_heading">
+          <span id="heroBage2">
+            Extra-Curricular
+          </span>
+          Activities
+        </h2>
+    </div>
+    <p class="extra_description">
+      Our comprehensive extra-curricular program provides
+      students with opportunities to explore their interests,
+      develop new skills, and build lasting friendships.
+    </p>
+  </div>
+
+
+  <!--IMAGE SLIDER -->
+  <div class="extra_slider_wrapper">
+    <div class="extra_slider">
+      <div class="extra_track">
+        <!-- CARD 1 -->
+        <div class="extra_card">
+          <img src="images/sports1.jpg">
+          <h3>Sports and athletics</h3>
+          <p>
+            Building teamwork and confidence through
+            active participation and healthy competition.
+          </p>
+        </div>
+
+        <!-- CARD 2 -->
+        <div class="extra_card">
+          <img src="images/weThe.jpg">
+          <h3>Faith & Values</h3>
+          <p>
+            Instilling integrity, compassion,
+            and purpose through spiritual
+            growth and service.
+          </p>
+        </div>
+
+        <!-- CARD 3 -->
+        <div class="extra_card">
+          <img src="images/music-fest.jpeg">
+          <h3>Music & Arts</h3>
+          <p>
+            Developing creativity through
+            musical expression and art.
+          </p>
+        </div>
+        <!-- CARD 4 -->
+        <div class="extra_card">
+          <img src="images/music-fest.jpeg">
+          <h3>Music & Arts</h3>
+          <p>
+            Developing creativity through
+            musical expression and art.
+          </p>
+        </div>
+        <!-- CARD 5 -->
+        <div class="extra_card">
+          <img src="images/music-fest.jpeg">
+          <h3>Music & Arts</h3>
+          <p>
+            Developing creativity through
+            musical expression and art.
+          </p>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- CONTROLS -->
+    <div class="extra_controls">
+        <button class="extra_btn prev">
+          <i class="fa-solid fa-arrow-left"></i>
+        </button>
+        <span class="scroll_text">
+          Scroll
+        </span>
+        <button class="extra_btn next">
+          <i class="fa-solid fa-arrow-right"></i>
+        </button>
+    </div>
+  </div>
+</section>
+
+
+<!--FACILITIES-->
+<section class="facilities_section container">
+    <div class="facilities_header">
+
+      <div class="facilities_left">
+        <div class="quick__badge">
+            <i class="fa-solid fa-wand-magic-sparkles"></i> Our Facilities
+          </div>
+        <h2>
+          Creating the perfect Learning Environment
+        </h2>
+      </div>
+      <p class="facilities_text">From classrooms to sports grounds, every facility atNaalya is built to nurture potential and encourage discovery.</p>
+    </div>
+
+    <div class="facilities_grid">
+
+      <div class="facility_card">
+        <img src="images/campus-1.jpg">
+        <h3>Classroom</h3>
+        <p>
+          Our classrooms provide a comfortable and engaging space 
+          designed to encourage active participation, collaboration, 
+          and effective learning for every student.
+        </p>
+      </div>
+
+
+      <div class="facility_card">
+        <img src="images/lab4.jpeg">
+        <h3>Science & Computer Labs</h3>
+        <p>
+          Our modern laboratories are equipped with the latest 
+          scientific and digital tools, allowing students to explore, 
+          experiment, and develop practical skills.
+        </p>
+      </div>
+
+
+      <div class="facility_card">
+        <img src="images/playground.jpeg">
+        <h3>Sports Facilities</h3>
+        <p>
+          We offer spacious sports grounds and equipment that promote 
+          teamwork, physical fitness, and healthy competition among 
+          students of all ages.
+        </p>
+      </div>
+
+
+      <div class="facility_card">
+        <img src="images/dormitories2.jpeg">
+        <h3>Dormitories</h3>
+        <p>
+          Our dormitories provide a safe, comfortable, and supportive 
+          living environment where students can rest, study, and build 
+          strong friendships.
+        </p>
+      </div>
+
+
+      <div class="facility_card">
+        <img src="images/library6.jpeg">
+        <h3>Library</h3>
+        <p>
+          Our library offers a quiet and resource-rich environment 
+          filled with books and digital materials that inspire reading, 
+          research, and independent learning.
+        </p>
+      </div>
+
+
+      <div class="facility_card">
+        <img src="images/dstv-students.jpg">
+        <h3>Entertainment</h3>
+        <p>
+          Our entertainment spaces provide students with opportunities 
+          to relax, socialize, and enjoy educational media in a fun 
+          and supervised setting.
+        </p>
+      </div>
+
+    </div>
+</section>
+
+<!-- =========================
+   SCHOOL LIFE OVERVIEW
+========================= -->
+
+<section class="school_life_section container">
+
+  <!-- HEADER -->
+
+  <div class="school_life_header">
+
+    <span class="section_badge">
+      <i class="fa-solid fa-heart-pulse"></i>
+      School Life
+    </span>
+
+    <h2 class="section_title">
+      School Life Overview
+    </h2>
+
+  </div>
+
+
+  <!-- SLIDESHOW -->
+
+  <div class="school_life_slider">
+
+    <!-- HEALTH -->
+
+    <div class="school_life_slide school_life_health">
+
+      <h3>Health</h3>
+
+      <p>
+        We operate a well-established and fully equipped sick bay, 
+        staffed by a qualified healthcare professional available 
+        throughout the school day.
+      </p>
+
+    </div>
+
+
+    <!-- ENTERTAINMENT -->
+
+    <div class="school_life_slide school_life_entertainment">
+
+      <h3>Entertainment</h3>
+
+      <p>
+        Students enjoy music, drama, sports, and co-curricular 
+        clubs that promote creativity, teamwork, and relaxation.
+      </p>
+
+    </div>
+
+
+    <!-- BOARDING -->
+
+    <div class="school_life_slide school_life_boarding">
+
+      <h3>Boarding</h3>
+
+      <p>
+        Our clean and secure dormitories provide a comfortable 
+        home-away-from-home with meals and supervision included.
+      </p>
+
+    </div>
+
+
+    <!-- INTERNET -->
+
+    <div class="school_life_slide school_life_internet">
+
+      <h3>Internet</h3>
+
+      <p>
+        Students benefit from fast and safe internet access 
+        that supports research, digital learning, and assignments.
+      </p>
+
+    </div>
+
+
+    <!-- SECURITY -->
+
+    <div class="school_life_slide school_life_security">
+
+      <h3>Security</h3>
+
+      <p>
+        The school maintains a strong and well-organized 
+        security system to ensure safety for students, 
+        staff, and visitors.
+      </p>
+
+    </div>
+
+
+    <!-- NAV BUTTONS -->
+
+    <button class="school_life_nav prev_btn">
+      &#10094;
+    </button>
+
+    <button class="school_life_nav next_btn">
+      &#10095;
+    </button>
+
+  </div>
+
+</section>
+
+
+
+<!-- =========================STUDENT TESTIMONIALS========================= -->
+
+<section class="student_voice_section container">
+  <div class="student_voice_header">
+    <span class="section_badge">
+      <i class="fa-solid fa-user-graduate"></i>
+      Testimonials
+    </span>
+
+    <h2 class="section_title">
+      Voice of the Students
+    </h2>
+
+  </div>
+
+
+  <div class="student_testimonial_slider">
+
+    <!-- STUDENT 1 -->
+
+    <div class="student_testimonial_card active">
+
+      <img
+        src="images/emurwon-pic.jpg"
+        class="student_photo"
+        alt="Student photo"
+      >
+
+      <p class="student_quote">
+        Education here is more than books—it's about diversity 
+        and preparing for a bright future.
+      </p>
+
+      <div class="student_name">
+        — Emurwon Robert
+      </div>
+
+      <div class="student_year">
+        2020–2024
+      </div>
+
+    </div>
+
+
+    <!-- STUDENT 2 -->
+
+    <div class="student_testimonial_card">
+
+      <img
+        src="images/collins1 (1).jpg"
+        class="student_photo"
+        alt="Student photo"
+      >
+
+      <p class="student_quote">
+        Pallisa Progressive shaped not only my mind 
+        but also my character.
+      </p>
+
+      <div class="student_name">
+        — Alutia Collins
+      </div>
+
+      <div class="student_year">
+        2021–2024
+      </div>
+
+    </div>
+
+
+    <!-- STUDENT 3 -->
+
+    <div class="student_testimonial_card">
+
+      <img
+        src="images/odele-john2.jpg"
+        class="student_photo"
+        alt="Student photo"
+      >
+
+      <p class="student_quote">
+        The learning environment is enjoyable and 
+        the spiritual guidance kept me grounded.
+      </p>
+
+      <div class="student_name">
+        — Odele John
+      </div>
+
+      <div class="student_year">
+        2019–2023
+      </div>
+
+    </div>
+
+
+    <!-- DOTS -->
+
+    <div class="student_slider_dots">
+
+      <span class="slider_dot active"></span>
+      <span class="slider_dot"></span>
+      <span class="slider_dot"></span>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+
+<!-- =========================
+   PARENT / PUBLIC TESTIMONIALS
+========================= -->
+
+<section class="public_testimonial_section container">
+
+  <div class="public_testimonial_header">
+
+    <span class="section_badge">
+      <i class="fa-solid fa-comments"></i>
+      Reviews
+    </span>
+
+    <h2 class="section_title center">
+      What People Say
+    </h2>
+
+  </div>
+
+
+  <div class="public_testimonial_slider">
+
+    <!-- TESTIMONIAL 1 -->
+
+    <div class="public_testimonial_card">
+
+      <p class="public_quote">
+
+        “The school prioritizes individual attention and 
+        support to each student. It has a diverse and 
+        inclusive atmosphere.”
+
+      </p>
+
+      <h4 class="public_author">
+        Mr. Omurwon Robert
+      </h4>
+
+    </div>
+
+
+    <!-- TESTIMONIAL 2 -->
+
+    <div class="public_testimonial_card">
+
+      <p class="public_quote">
+
+        “The school performs consistently well in exams; 
+        many students qualify for good institutions 
+        after completing here.”
+
+      </p>
+
+      <h4 class="public_author">
+        Mr. Balunywa Abubakar
+      </h4>
+
+    </div>
+
+
+    <!-- TESTIMONIAL 3 -->
+
+    <div class="public_testimonial_card">
+
+      <p class="public_quote">
+
+        “Beyond academics, the school ensures student 
+        wellbeing through clean facilities and 
+        carefully planned meals.”
+
+      </p>
+
+      <h4 class="public_author">
+        Mr. Okurut Ivan
+      </h4>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+
+
 </main>
-
-
-
-<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-  <script src="main.js"></script>
-  <script src="menu.js"></script>
-
 </body>
 </html>

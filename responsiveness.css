@@ -23,72 +23,14 @@
     width: 100%;
   }
 }
-/* TABLET */
-@media (max-width: 992px) {
-
-  .slider {
-    height: 85vh;
-  }
-
-  .caption {
-    left: 5%;
-    width: 90%;
-    margin-bottom: 20px;
-  }
-  .hero-badge{
-    top: 12%;
-  }
-  .hero-floating-buttons {
-  bottom: 4%;
-  }
-  .hero-features{
-    bottom: 28%;
-    }
-
-}
-
-/* MOBILE */
-@media (max-width: 600px) {
-  
-  .slider {
-    height: 100vh;
-  }
-
-  .caption {
-    bottom: 60%;
-    left: 50%;
-    width: 100%;
-    padding: 1rem;
-
-  }
-  .hero-badge{
-    top: 7%;
-  }
-  .hero-floating-buttons {
-  bottom: 35%;
-  }
-  .hero-features{
-    bottom: -5px;
-   flex-direction: column;
-    }
-  .caption.active {
-    transform: translateX(-50%) translateY(0);
-  }
-
-  .caption h3 {
-    font-size: 1.2rem;
-  }
-  .caption p {
-    font-size: 0.9rem;
-  }
-
-}
 
 
 /* TABLET */
 @media (max-width: 900px) {
   .quick_word_from_headteacher {
     flex-direction: column;
+    padding: 4rem 1rem;
+    
   }
 
   .content__right {
@@ -103,8 +45,9 @@
 
 /* MOBILE */
 @media (max-width: 600px) {
+  
   .content__left img {
-    max-width: 420px;
+    max-width: 520px;
   }
 
   .quick__message p {
@@ -121,6 +64,7 @@
   .about__us__section {
     flex-direction: column;
     text-align: left;
+    padding: 3rem 1rem;
   }
 
   .about_us_content_left {
@@ -133,8 +77,10 @@
   }
 
   .Year__Badge {
-    left: 10px;
+    left: 10%;
     bottom: -15px;
+    width: 80%;
+    text-align: center;
   }
 
 }
@@ -143,7 +89,7 @@
     order: -1;
   }
   .about__us__section {
-    padding: 1rem 1.2rem;
+    padding: 4rem 1rem;
   }
 
   .about_us_content_left h1 {
@@ -152,12 +98,13 @@
 
   .imageContainer {
     height: 450px;
+    width: 100%;
   }
 
   .Year__Badge {
     padding: 10px 12px;
     bottom: -12px;
-    left: 10px;
+    left: 10%;
     width: 80%;
   }
 
