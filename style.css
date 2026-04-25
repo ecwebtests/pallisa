@@ -94,7 +94,7 @@ section {
   display: flex;
   align-items: center;
   overflow: hidden;
-  background-image: url('/images/adimBlock.jpg');
+  background-image: url('images/adimBlock.jpg');
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
