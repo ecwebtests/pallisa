@@ -81,3 +81,148 @@ track.addEventListener('touchend',e=>{
 
 updateButtons();
 window.addEventListener('resize',moveSlider);
+
+
+
+
+
+
+
+(function () {
+
+  const galleryImages =
+    document.querySelectorAll('.gallery__item img');
+
+  const galleryModal =
+    document.getElementById('lightbox');
+
+  const galleryImage =
+    document.getElementById('lightboxImage');
+
+  const galleryClose =
+    document.querySelector('.gallery-modal__close');
+
+  const galleryNext =
+    document.querySelector('.gallery-modal__nav.next');
+
+  const galleryPrev =
+    document.querySelector('.gallery-modal__nav.prev');
+
+  const galleryCounter =
+    document.getElementById('galleryCounter');
+
+  let currentIndex = 0;
+
+  const imageList =
+    Array.from(galleryImages)
+      .map(img => img.src);
+
+
+  // =========================
+  // SHOW IMAGE
+  // =========================
+
+  function showImage(index) {
+
+    currentIndex = index;
+
+    galleryImage.src =
+      imageList[index];
+
+    galleryCounter.textContent =
+      `${index + 1} / ${imageList.length}`;
+
+  }
+
+
+  // =========================
+  // OPEN
+  // =========================
+
+  galleryImages.forEach((img, index) => {
+
+    img.addEventListener('click', () => {
+
+      galleryModal.classList.add('show');
+
+      showImage(index);
+
+      document.body.classList.add('no-scroll');
+
+    });
+
+  });
+
+
+  // =========================
+  // CLOSE
+  // =========================
+
+  galleryClose.addEventListener('click', () => {
+
+    galleryModal.classList.remove('show');
+
+    document.body.classList.remove('no-scroll');
+
+  });
+
+
+  // =========================
+  // NEXT
+  // =========================
+
+  galleryNext.addEventListener('click', () => {
+
+    currentIndex =
+      (currentIndex + 1)
+      % imageList.length;
+
+    showImage(currentIndex);
+
+  });
+
+
+  // =========================
+  // PREVIOUS
+  // =========================
+
+  galleryPrev.addEventListener('click', () => {
+
+    currentIndex =
+      (currentIndex - 1 + imageList.length)
+      % imageList.length;
+
+    showImage(currentIndex);
+
+  });
+
+
+  // =========================
+  // SWIPE SUPPORT
+  // =========================
+
+  let startX = 0;
+
+  galleryModal.addEventListener('touchstart', e => {
+
+    startX = e.touches[0].clientX;
+
+  });
+
+  galleryModal.addEventListener('touchend', e => {
+
+    let endX =
+      e.changedTouches[0].clientX;
+
+    if (startX - endX > 50)
+      galleryNext.click();
+
+    if (endX - startX > 50)
+      galleryPrev.click();
+
+  });
+
+})();
+
+
+

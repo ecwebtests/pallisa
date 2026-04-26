@@ -4,10 +4,10 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Home</title>
-
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
   <link rel="stylesheet" href="style.css"/>
+  <link rel="stylesheet" href="narbar.css">
   <link rel="stylesheet" href="responsiveness.css">
   <link rel="stylesheet" href="footer.css">
   <script src="main.js" defer></script>
@@ -22,7 +22,7 @@
               <!--NAVBAR ───────────────────────────────────── -->
               <nav id="mainNav" class="navbar">
                 <div class="navbar__inner">
-                  <a href="index.html" class="navbar__logo"><img src="images/logo1.jpeg" alt="Logo" width="50" height="50"><span>PALLISA P.S.S</span></a>
+                  <a href="index.html" class="navbar__logo"><img src="images/logo1.jpeg" alt="Logo" width="40" height="40"><span>PALLISA P.S.S</span></a>
 
                   <ul class="navbar__links">
                     
@@ -74,7 +74,7 @@
                       </a>
                       <div class="dropdown__menu">
                         <div class="dropdown__header">School life</div>
-                        <a href="#community"><i class="fa fa-picture-o"></i>Gallery</a>
+                        <a href="#gallery"><i class="fa fa-picture-o"></i>Gallery</a>
                         <a href="#community"><i class="fa fa-briefcase"></i>Staff Portal</a>
                       </div>
                     </li>
@@ -141,7 +141,7 @@
                     Community <i class="fa fa-chevron-down mobile-chevron"></i>
                   </button>
                   <div class="mobile-dropdown__menu">
-                    <a href="#community" class="mobile-dropdown__link"><i class="fa fa-picture-o"></i> Gallery</a>
+                    <a href="#gallery" class="mobile-dropdown__link"><i class="fa fa-picture-o"></i> Gallery</a>
                     <a href="#community" class="mobile-dropdown__link"><i class="fa fa-briefcase"></i> Staff Portal</a>
                   </div>
                 </div>
@@ -671,307 +671,213 @@
     </div>
 </section>
 
-<!-- =========================
-   SCHOOL LIFE OVERVIEW
-========================= -->
 
-<section class="school_life_section container">
 
-  <!-- HEADER -->
+<section class="campus-gallery container" id="gallery">
 
-  <div class="school_life_header">
+  <div class="gallery__container">
 
-    <span class="section_badge">
-      <i class="fa-solid fa-heart-pulse"></i>
-      School Life
-    </span>
+    <div class="gallery__intro">
 
-    <h2 class="section_title">
-      School Life Overview
-    </h2>
+      <div class="quick__badge">
+        <i class="fa-solid fa-wand-magic-sparkles"></i>
+        Pallisa Gallery
+      </div>
+
+      <h2 class="gallery__title">
+        A Glimpse into daily life at  
+        <span class="highlight">
+          Pallisa Progressive SS
+        </span>
+      </h2>
+
+    </div>
+
+    <!-- RIGHT -->
+    <div class="gallery__text">
+
+      <p>
+        Experience the vibrant community, modern facilities,
+        and dynamic learning environment that make
+        <strong>Pallisa Progressive Secondary School</strong>
+        special. From classrooms to sports fields, our campus
+        is alive with learning, growth, and achievement.
+      </p>
+
+    </div>
 
   </div>
 
 
-  <!-- SLIDESHOW -->
+  <!-- =====================
+       IMAGE GRID
+  ====================== -->
 
-  <div class="school_life_slider">
+  <div class="gallery__grid">
 
-    <!-- HEALTH -->
+    <!-- Image 1 -->
+    <div class="gallery__item wide">
 
-    <div class="school_life_slide school_life_health">
-
-      <h3>Health</h3>
-
-      <p>
-        We operate a well-established and fully equipped sick bay, 
-        staffed by a qualified healthcare professional available 
-        throughout the school day.
-      </p>
-
-    </div>
-
-
-    <!-- ENTERTAINMENT -->
-
-    <div class="school_life_slide school_life_entertainment">
-
-      <h3>Entertainment</h3>
-
-      <p>
-        Students enjoy music, drama, sports, and co-curricular 
-        clubs that promote creativity, teamwork, and relaxation.
-      </p>
+      <img
+        src="images/researching-laboratory.jpg"
+        alt="Students conducting laboratory research"
+        data-index="0"
+        loading="lazy"
+      >
 
     </div>
 
 
-    <!-- BOARDING -->
+    <!-- Image 2 -->
+    <div class="gallery__item tall">
 
-    <div class="school_life_slide school_life_boarding">
-
-      <h3>Boarding</h3>
-
-      <p>
-        Our clean and secure dormitories provide a comfortable 
-        home-away-from-home with meals and supervision included.
-      </p>
-
-    </div>
-
-
-    <!-- INTERNET -->
-
-    <div class="school_life_slide school_life_internet">
-
-      <h3>Internet</h3>
-
-      <p>
-        Students benefit from fast and safe internet access 
-        that supports research, digital learning, and assignments.
-      </p>
+      <img
+        src="images/media1.jpg"
+        alt="School media and photography activities"
+        data-index="1"
+        loading="lazy"
+      >
 
     </div>
 
 
-    <!-- SECURITY -->
+    <!-- Image 3 -->
+    <div class="gallery__item">
 
-    <div class="school_life_slide school_life_security">
-
-      <h3>Security</h3>
-
-      <p>
-        The school maintains a strong and well-organized 
-        security system to ensure safety for students, 
-        staff, and visitors.
-      </p>
+      <img
+        src="images/lab.jpeg"
+        alt="Students performing science experiment"
+        data-index="2"
+        loading="lazy"
+      >
 
     </div>
 
 
-    <!-- NAV BUTTONS -->
+    <!-- Image 4 -->
+    <div class="gallery__item">
 
-    <button class="school_life_nav prev_btn">
-      &#10094;
+      <img
+        src="images/music-fest.jpeg"
+        alt="Students performing during music festival"
+        data-index="3"
+        loading="lazy"
+      >
+
+    </div>
+
+
+    <!-- Image 5 -->
+    <div class="gallery__item">
+
+      <img
+        src="images/pp1.jpeg"
+        alt="Students participating in school activities"
+        data-index="4"
+        loading="lazy"
+      >
+
+    </div>
+
+
+    <!-- Image 6 -->
+    <div class="gallery__item wide big">
+
+      <img
+        src="images/adimBlock.jpg"
+        alt="Administration block building"
+        data-index="5"
+        loading="lazy"
+      >
+
+    </div>
+
+  </div>
+
+</section>
+
+<!-- =====================
+     MODAL CAROUSEL
+====================== -->
+
+<div class="gallery-modal" id="lightbox">
+
+  <div class="gallery-modal__card">
+
+ 
+    <button class="gallery-modal__close">
+      ✕
     </button>
 
-    <button class="school_life_nav next_btn">
-      &#10095;
-    </button>
-
-  </div>
-
-</section>
-
-
-
-<!-- =========================STUDENT TESTIMONIALS========================= -->
-
-<section class="student_voice_section container">
-  <div class="student_voice_header">
-    <span class="section_badge">
-      <i class="fa-solid fa-user-graduate"></i>
-      Testimonials
-    </span>
-
-    <h2 class="section_title">
-      Voice of the Students
-    </h2>
-
-  </div>
-
-
-  <div class="student_testimonial_slider">
-
-    <!-- STUDENT 1 -->
-
-    <div class="student_testimonial_card active">
+    <div class="gallery-modal__image-area">
 
       <img
-        src="images/emurwon-pic.jpg"
-        class="student_photo"
-        alt="Student photo"
+        id="lightboxImage"
+        src=""
+        alt="Gallery image preview"
       >
-
-      <p class="student_quote">
-        Education here is more than books—it's about diversity 
-        and preparing for a bright future.
-      </p>
-
-      <div class="student_name">
-        — Emurwon Robert
-      </div>
-
-      <div class="student_year">
-        2020–2024
-      </div>
 
     </div>
 
+    <!-- CONTROLS -->
+    <div class="gallery-modal__controls">
 
-    <!-- STUDENT 2 -->
+      <button class="gallery-modal__nav prev">
+        ❮
+      </button>
 
-    <div class="student_testimonial_card">
+      <span
+        class="gallery-modal__counter"
+        id="galleryCounter">
+        1 / 6
+      </span>
 
-      <img
-        src="images/collins1 (1).jpg"
-        class="student_photo"
-        alt="Student photo"
-      >
-
-      <p class="student_quote">
-        Pallisa Progressive shaped not only my mind 
-        but also my character.
-      </p>
-
-      <div class="student_name">
-        — Alutia Collins
-      </div>
-
-      <div class="student_year">
-        2021–2024
-      </div>
-
-    </div>
-
-
-    <!-- STUDENT 3 -->
-
-    <div class="student_testimonial_card">
-
-      <img
-        src="images/odele-john2.jpg"
-        class="student_photo"
-        alt="Student photo"
-      >
-
-      <p class="student_quote">
-        The learning environment is enjoyable and 
-        the spiritual guidance kept me grounded.
-      </p>
-
-      <div class="student_name">
-        — Odele John
-      </div>
-
-      <div class="student_year">
-        2019–2023
-      </div>
-
-    </div>
-
-
-    <!-- DOTS -->
-
-    <div class="student_slider_dots">
-
-      <span class="slider_dot active"></span>
-      <span class="slider_dot"></span>
-      <span class="slider_dot"></span>
+      <button class="gallery-modal__nav next">
+        ❯
+      </button>
 
     </div>
 
   </div>
 
-</section>
-
-
-
+</div>
 <!-- =========================
-   PARENT / PUBLIC TESTIMONIALS
+   LAST CALL TO ACTION
 ========================= -->
 
-<section class="public_testimonial_section container">
+<section class="last_cta_section container">
 
-  <div class="public_testimonial_header">
+  <div class="last_cta_container">
 
-    <span class="section_badge">
-      <i class="fa-solid fa-comments"></i>
-      Reviews
-    </span>
-
-    <h2 class="section_title center">
-      What People Say
+    <h2 class="last_cta_heading">
+      Start Your Journey Today at <br>
+      <span class="last_cta_highlight">
+        Pallisa Progressive SS
+      </span>
     </h2>
 
-  </div>
+    <p class="last_cta_subheading">
+      Take the first step toward excellence — apply today or <br>
+      book a visit to learn more
+    </p>
 
+    <div class="last_cta_buttons">
 
-  <div class="public_testimonial_slider">
+      <a href="#" class="last_cta_btn last_cta_apply">
 
-    <!-- TESTIMONIAL 1 -->
+        Apply for Admissions
+        <span class="last_cta_arrow">
+          &rarr;
+        </span>
 
-    <div class="public_testimonial_card">
+      </a>
 
-      <p class="public_quote">
+      <a href="tel:+256777891441"
+         class="last_cta_btn last_cta_contact">
 
-        “The school prioritizes individual attention and 
-        support to each student. It has a diverse and 
-        inclusive atmosphere.”
+        Contact Us
 
-      </p>
-
-      <h4 class="public_author">
-        Mr. Omurwon Robert
-      </h4>
-
-    </div>
-
-
-    <!-- TESTIMONIAL 2 -->
-
-    <div class="public_testimonial_card">
-
-      <p class="public_quote">
-
-        “The school performs consistently well in exams; 
-        many students qualify for good institutions 
-        after completing here.”
-
-      </p>
-
-      <h4 class="public_author">
-        Mr. Balunywa Abubakar
-      </h4>
-
-    </div>
-
-
-    <!-- TESTIMONIAL 3 -->
-
-    <div class="public_testimonial_card">
-
-      <p class="public_quote">
-
-        “Beyond academics, the school ensures student 
-        wellbeing through clean facilities and 
-        carefully planned meals.”
-
-      </p>
-
-      <h4 class="public_author">
-        Mr. Okurut Ivan
-      </h4>
+      </a>
 
     </div>
 
@@ -980,6 +886,74 @@
 </section>
 
 
+
+
+<footer class="site-footer container">
+    <div class="footer-container">
+        <div class="footer-grid">
+
+            <!-- Brand Section -->
+            <div class="footer-brand">
+                <div class="logo">
+                    <img src="images/logo1.jpeg" alt="Pallisa Progressive Secondary School Logo">
+                    <h2>Pallisa Progressive S.S</h2>
+                </div>
+                <p class="description">
+                    10+ years of commitment to academic excellence and holistic education in Uganda.
+                </p>
+
+                <div class="social-icons">
+                    <a href="https://www.tiktok.com/@pallisa.prog..sec?is_from_webapp=1&sender_device=pc" target="_blank" aria-label="TikTok"><i class='fab fa-tiktok'></i></a>
+                    <a href="https://www.facebook.com/profile.php?id=100066400460286" target="_blank" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://wa.me/256754391008" aria-label="Whatsapp" target="_blank"><i class="fab fa-whatsapp"></i></a>
+                    <a href="https://youtu.be/2wmHz4-qH4Y?si=HnfLzBJw8lEXqULo" aria-label="YouTube" target="_blank"><i class='fab fa-youtube'></i></a>
+                </div>
+            </div>
+
+            <!-- Campuses -->
+            <div class="footer-links">
+                <h3>Contact</h3>
+                  <ul>
+                      <li><a href="tel:+256754391008">+256 754 391 008  </a></li>
+                      <li><a href="mailto:pallisaprogressivess@gmail.com">pallisaprogressivess@gmail.com</a></li>
+                      <li><a href="#">Pallisa District, Uganda</a></li>
+                  </ul>
+            </div>
+
+            <!-- School -->
+            <div class="footer-links">
+                <h3>School</h3>
+                <ul>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="#">Leadership</a></li>
+                    <li><a href="#">Academic Hub</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </div>
+
+            <!-- Quick Links -->
+            <div class="footer-links">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#">Adissions</a></li>
+                    <li><a href="#">Events</a></li>
+                    <li><a href="#">Student Life</a></li>
+                </ul>
+            </div>
+
+        </div>
+
+        <!-- Bottom Section -->
+        <div class="footer-bottom">
+            <p>&copy; 2026 Pallisa Progressive Secondary School. All rights reserved.</p>
+
+            <div class="footer-bottom-links">
+                <a href="#">Terms and Conditions</a>
+                <a href="#">Privacy Policy</a>
+            </div>
+        </div>
+    </div>
+</footer>
 
 
 </main>
