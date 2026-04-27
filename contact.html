@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Home</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css"/>
+  <link rel="stylesheet" href="narbar.css">
+  <link rel="stylesheet" href="responsiveness.css">
+  <link rel="stylesheet" href="footer.css">
+    <link rel="stylesheet" href="contact.css">
+  <script src="main.js" defer></script>
+  <script src="menu.js" defer></script>
+
+</head>
+<body>
+    <header>
+       
+              <!--overlay-->
+              <div class="menu-overlay" id="menuOverlay"></div>
+              <!--NAVBAR ───────────────────────────────────── -->
+              <nav id="mainNav" class="navbar">
+                <div class="navbar__inner">
+                  <a href="index.html" class="navbar__logo"><img src="images/logo1.jpeg" alt="Logo" width="40" height="40"><span>PALLISA P.S.S</span></a>
+
+                  <ul class="navbar__links">
+                    
+                    <li class="navbar__item">
+                      <a href="index.html" class="navbar__link">Home</a>
+                    </li>
+
+
+                    <li class="navbar__item dropdown">
+                      <a href="#about" class="navbar__link">About Us
+                        <i class="fa fa-chevron-down chevron"></i>
+                      </a>
+                      <div class="dropdown__menu">
+                        <a href="#about"><i class="fa fa-home"></i>Our School</a>
+                        <a href="#about"><i class="fa fa-info-circle"></i>Mission & Vision</a>
+                        <a href="#about"><i class="fa fa-users"></i>Administration</a>
+                        <a href="#about"><i class="fa fa-history"></i>History</a>
+                      </div>
+                    </li>
+
+                    <li class="navbar__item dropdown">
+                      <a href="#academics" class="navbar__link">Academics
+                        <i class="fa fa-chevron-down chevron"></i>
+                      </a>
+
+                      <div class="dropdown__menu">
+                        <a href="#about"><i class="fa fa-home"></i>Admissions</a>
+                        <a href="#about"><i class="fa fa-info-circle"></i>Games & Sports</a>
+                      </div>
+                    </li>
+
+                      <li class="navbar__item dropdown">
+                          <a href="#academics" class="navbar__link">Contact Us
+                            <i class="fa fa-chevron-down chevron"></i>
+                          </a>
+                          <div class="dropdown__menu">
+                          <a href="" id="callbutton" ><i class="fa fa-phone"></i>Call Us</a>
+                          <a href="sms:+256 782 620 783"><i class="fa fa-envelope" aria-hidden="true"></i>Message Us</a>
+                          <a href="emailto:pallisaprogressivess@gmail.com"><i class="fa fa-envelope" aria-hidden="true"></i>Email Us</a>
+                          </div>
+                        </li>
+
+                    
+
+                    <li class="navbar__item dropdown">
+                      <a href="#community" class="navbar__link">Community
+                        <i class="fa fa-chevron-down chevron"></i>
+                      </a>
+                      <div class="dropdown__menu">
+                        <div class="dropdown__header">School life</div>
+                        <a href="#gallery"><i class="fa fa-picture-o"></i>Gallery</a>
+                        <a href="#community"><i class="fa fa-briefcase"></i>Staff Portal</a>
+                      </div>
+                    </li>
+                  </ul>
+
+                  <div class="navbar__actions">
+                    <button class="navbar__toggle" id="hamburger" aria-label="Toggle menu" aria-expanded="false">
+                      <span></span>
+                      <span></span>
+                      <span></span>
+                    </button>
+                  </div>
+                </div>
+              </nav>
+
+                 
+                 <!-- MOBILE MENU WITH DROPDOWN MENUS -->
+              <div class="mobile-menu" id="mobileMenu" hidden>
+
+                <!-- Home Link  -->
+                <a href="index.html" class="mobile-dropdown__link" id="link1" >
+                  Home
+                </a>
+
+                <!-- About Us -->
+                <div class="mobile-dropdown">
+                  <button class="mobile-dropdown__trigger">
+                    About Us <i class="fa fa-chevron-down mobile-chevron"></i>
+                  </button>
+                  <div class="mobile-dropdown__menu">
+                    <a href="#about" class="mobile-dropdown__link"><i class="fa fa-home"></i> Our School</a>
+                    <a href="#about" class="mobile-dropdown__link"><i class="fa fa-info-circle"></i> Mission & Vision</a>
+                    <a href="#about" class="mobile-dropdown__link"><i class="fa fa-users"></i> Administration</a>
+                    <a href="#about" class="mobile-dropdown__link"><i class="fa fa-history"></i> History</a>
+                  </div>
+                </div>
+
+                <!-- Academics -->
+                <div class="mobile-dropdown">
+                  <button class="mobile-dropdown__trigger">
+                    Academics <i class="fa fa-chevron-down mobile-chevron"></i>
+                  </button>
+                  <div class="mobile-dropdown__menu">
+                    <a href="#about" class="mobile-dropdown__link"><i class="fa fa-home"></i> Admissions</a>
+                    <a href="#about" class="mobile-dropdown__link"><i class="fa fa-info-circle"></i> Games & Sports</a>
+                  </div>
+                </div>
+
+                <!-- Contact Us  -->
+                <div class="mobile-dropdown">
+                  <button class="mobile-dropdown__trigger">
+                    Contact Us <i class="fa fa-chevron-down mobile-chevron"></i>
+                  </button>
+                  <div class="mobile-dropdown__menu">
+                    <a href="" id="callbutton" class="mobile-dropdown__link"><i class="fa fa-phone"></i> Call Us</a>
+                    <a href="sms:+256782620783" class="mobile-dropdown__link"><i class="fa fa-comment"></i> Message Us</a>
+                    <a href="mailto:pallisaprogressivess@gmail.com" class="mobile-dropdown__link"><i class="fa fa-envelope"></i> Email Us</a>
+                  </div>
+                </div>
+
+                <!-- Community -->
+                <div class="mobile-dropdown">
+                  <button class="mobile-dropdown__trigger">
+                    Community <i class="fa fa-chevron-down mobile-chevron"></i>
+                  </button>
+                  <div class="mobile-dropdown__menu">
+                    <a href="#gallery" class="mobile-dropdown__link"><i class="fa fa-picture-o"></i> Gallery</a>
+                    <a href="#community" class="mobile-dropdown__link"><i class="fa fa-briefcase"></i> Staff Portal</a>
+                  </div>
+                </div>
+
+              </div>
+    </header>
+
+<!--PHONE CALL POPUP MENU-->
+ <div class="modal-overlay hidden" id="contactModal">
+        <div class="modal-container">
+            <!-- Close Button -->
+            <button class="close-btn" onclick="closeModal()">&times;</button>
+            <div class="phone-icon">
+                <i class="fa fa-phone"></i>
+            </div>
+            <h2 class="modal-title">Can't wait for a message?</h2>
+            <p class="modal-subtitle">Give us a call — we're here to help</p>
+            <div class="campus-list">
+                <a class="campus-item" href="tel:+256 754 391 008">
+                    <div class="campus-name">Pallisa HelpLine</div>
+                    <span  class="campus-phone">+256754391008</span>
+                </a>
+            </div>
+            <div class="availability">
+                Available Monday - Friday, 8:00 Am - 5:00 Pm
+            </div>
+        </div>
+  </div>
+
+  <section class="contact_hero_section">
+    <div class="contact_hero_section_wrapper">
+      <div class="quick__badge"><i class="fa-solid fa-wand-magic-sparkles"></i>Our Contact</div>
+      <h1>Get in Touch with <span class="highlight">Pallisa Progressive SS</span></h1>
+      <p>We'd love to hear from you! Whether you have questions about admissions, programs, or campus life, our team is ready to assist.</p>
+    </div>
+  </section>
+ 
+
+
+
+
+ <!--<section class="contactMainSection container">
+      <div class="contactMainWrapper">
+        <div class="contactInfoPanel">
+          <h2 class="contactInfoTitle">
+            Your Questions Matter — We're Here to Assist You!
+          </h2>
+
+          <div class="contactInfoItems">
+            <div class="contactInfoItem">
+              <div class="contactIcon">
+                <i class="fa fa-envelope"></i>
+              </div>
+              <div>
+                <h4>Email Addresses</h4>
+                <p>pallisaprogressivess@gmail.com</p>
+              </div>
+            </div>
+
+            <div class="contactInfoItem">
+              <div class="contactIcon">
+                <i class="fa fa-phone"></i>
+              </div>
+              <div>
+                <h4>Phone Numbers</h4>
+                <p>+256 754 391 008</p>
+              </div>
+            </div>
+
+            <div class="contactInfoItem">
+              <div class="contactIcon">
+                <i class="fa fa-map-marker"></i>
+              </div>
+              <div>
+                <h4>Physical Address</h4>
+                <p>Pallisa District, Uganda</p>
+              </div>
+            </div>
+          </div>
+
+          <p class="contactSocialText">
+            You can also reach us on our social media platforms
+          </p>
+
+          <div class="contactSocialIcons">
+            <a href="https://www.tiktok.com/@pallisa.prog..sec?is_from_webapp=1&sender_device=pc" target="_blank" aria-label="TikTok">
+              <i class='fab fa-tiktok'></i>
+            </a>
+            <a href="https://www.facebook.com/profile.php?id=100066400460286" target="_blank" aria-label="Facebook">
+              <i class="fab fa-facebook-f"></i>
+            </a>
+            <a href="https://wa.me/256754391008" aria-label="Whatsapp" target="_blank">
+              <i class="fab fa-whatsapp"></i>
+            </a>
+            <a href="https://youtu.be/2wmHz4-qH4Y?si=HnfLzBJw8lEXqULo" aria-label="YouTube" target="_blank">
+              <i class='fab fa-youtube'></i>
+            </a>
+          </div>
+        </div>
+
+      
+        <div class="contactFormPanel">
+          <form class="contactForm">
+            <div class="formGroup">
+              <label>Name</label>
+              <input type="text" placeholder="Enter your name">
+            </div>
+
+            <div class="formGroup">
+              <label>Email</label>
+              <input type="email" placeholder="example@email.com">
+            </div>
+
+            <div class="formGroup">
+              <label>Subject</label>
+              <select>
+                <option>Admissions</option>
+                <option>Academics</option>
+                <option>School Fees</option>
+                <option>Other Inquiry</option>
+              </select>
+            </div>
+
+            <div class="formGroup">
+              <label>Message</label>
+              <textarea placeholder="Enter your message"></textarea>
+            </div>
+
+            <button type="submit" class="contactSubmitBtn">
+              Send Message
+            </button>
+          </form>
+        </div>
+      </div>
+</section>--> 
+
+
+
+
+<footer class="site-footer container">
+    <div class="footer-container">
+        <div class="footer-grid">
+
+            <!-- Brand Section -->
+            <div class="footer-brand">
+                <div class="logo">
+                    <img src="images/logo1.jpeg" alt="Pallisa Progressive Secondary School Logo">
+                    <h2>Pallisa Progressive S.S</h2>
+                </div>
+                <p class="description">
+                    10+ years of commitment to academic excellence and holistic education in Uganda.
+                </p>
+
+                <div class="social-icons">
+                    <a href="https://www.tiktok.com/@pallisa.prog..sec?is_from_webapp=1&sender_device=pc" target="_blank" aria-label="TikTok"><i class='fab fa-tiktok'></i></a>
+                    <a href="https://www.facebook.com/profile.php?id=100066400460286" target="_blank" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://wa.me/256754391008" aria-label="Whatsapp" target="_blank"><i class="fab fa-whatsapp"></i></a>
+                    <a href="https://youtu.be/2wmHz4-qH4Y?si=HnfLzBJw8lEXqULo" aria-label="YouTube" target="_blank"><i class='fab fa-youtube'></i></a>
+                </div>
+            </div>
+
+            <!-- Campuses -->
+            <div class="footer-links">
+                <h3>Contact</h3>
+                  <ul>
+                      <li><a href="tel:+256754391008">+256 754 391 008  </a></li>
+                      <li><a href="mailto:pallisaprogressivess@gmail.com">pallisaprogressivess@gmail.com</a></li>
+                      <li><a href="#">Pallisa District, Uganda</a></li>
+                  </ul>
+            </div>
+
+            <!-- School -->
+            <div class="footer-links">
+                <h3>School</h3>
+                <ul>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="#">Leadership</a></li>
+                    <li><a href="#">Academic Hub</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </div>
+
+            <!-- Quick Links -->
+            <div class="footer-links">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#">Adissions</a></li>
+                    <li><a href="#">Events</a></li>
+                    <li><a href="#">Student Life</a></li>
+                </ul>
+            </div>
+
+        </div>
+
+        <!-- Bottom Section -->
+        <div class="footer-bottom">
+            <p>&copy; 2026 Pallisa Progressive Secondary School. All rights reserved.</p>
+
+            <div class="footer-bottom-links">
+                <a href="#">Terms and Conditions</a>
+                <a href="#">Privacy Policy</a>
+            </div>
+        </div>
+    </div>
+</footer>
+
+</body>
+</html>

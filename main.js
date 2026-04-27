@@ -226,3 +226,30 @@ window.addEventListener('resize',moveSlider);
 
 
 
+// Function to close modal______________________________________________________________
+        function closeModal() {
+            document.getElementById('contactModal').classList.add('hidden');
+            document.body.style.overflow='auto';
+        }
+
+        // Close modal when clicking outside
+        document.getElementById('contactModal').addEventListener('click', function(e) {
+            if (e.target === this) {
+                closeModal();
+            }
+        });
+
+        // Function to open modal 
+        function openModal() {
+            document.getElementById('contactModal').classList.remove('hidden');
+            document.body.style.overflow='hidden';
+        }
+        document.querySelectorAll("#callbutton")
+        .forEach(button=>{
+          button.addEventListener("click", function(e) {
+            e.preventDefault();
+            openModal();
+        });
+        });
+
+

@@ -10,6 +10,7 @@
   <link rel="stylesheet" href="narbar.css">
   <link rel="stylesheet" href="responsiveness.css">
   <link rel="stylesheet" href="footer.css">
+
   <script src="main.js" defer></script>
   <script src="menu.js" defer></script>
 
@@ -59,9 +60,8 @@
                             <i class="fa fa-chevron-down chevron"></i>
                           </a>
                           <div class="dropdown__menu">
-
-                          <a href="tel:+256777891441"><i class="fa fa-phone"></i>Call Us</a>
-                          <a href="sms:+256 782 620 783"><i class="fa fa-envelope" aria-hidden="true"></i>Message Us</a>
+                          <a href="" id="callbutton" ><i class="fa fa-phone"></i>Call Us</a>
+                          <a href="contact.html"><i class="fa fa-envelope" aria-hidden="true"></i>Message Us</a>
                           <a href="emailto:pallisaprogressivess@gmail.com"><i class="fa fa-envelope" aria-hidden="true"></i>Email Us</a>
                           </div>
                         </li>
@@ -129,8 +129,8 @@
                     Contact Us <i class="fa fa-chevron-down mobile-chevron"></i>
                   </button>
                   <div class="mobile-dropdown__menu">
-                    <a href="tel:+256777891441" class="mobile-dropdown__link"><i class="fa fa-phone"></i> Call Us</a>
-                    <a href="sms:+256782620783" class="mobile-dropdown__link"><i class="fa fa-comment"></i> Message Us</a>
+                    <a href="" id="callbutton" class="mobile-dropdown__link"><i class="fa fa-phone"></i> Call Us</a>
+                    <a href="contact.html" class="mobile-dropdown__link"><i class="fa fa-comment"></i> Message Us</a>
                     <a href="mailto:pallisaprogressivess@gmail.com" class="mobile-dropdown__link"><i class="fa fa-envelope"></i> Email Us</a>
                   </div>
                 </div>
@@ -151,7 +151,12 @@
  
 
 
-  
+
+
+
+
+
+
   <!--MAIN ─────────────────────────────────────── -->
 <main>
 <!-- HERO SECTION -->
@@ -227,7 +232,27 @@
 
 </div>
 
-
+<!--PHONE CALL POPUP MENU-->
+ <div class="modal-overlay hidden" id="contactModal">
+        <div class="modal-container">
+            <!-- Close Button -->
+            <button class="close-btn" onclick="closeModal()">&times;</button>
+            <div class="phone-icon">
+                <i class="fa fa-phone"></i>
+            </div>
+            <h2 class="modal-title">Can't wait for a message?</h2>
+            <p class="modal-subtitle">Give us a call — we're here to help</p>
+            <div class="campus-list">
+                <a class="campus-item" href="tel:+256 754 391 008">
+                    <div class="campus-name">Pallisa HelpLine</div>
+                    <span  class="campus-phone">+256754391008</span>
+                </a>
+            </div>
+            <div class="availability">
+                Available Monday - Friday, 8:00 Am - 5:00 Pm
+            </div>
+        </div>
+  </div>
 
  <!--HEADTEACHER WELCOME REMARKS-->
  <section class="quick_word_from_headteacher container">
@@ -598,7 +623,7 @@
           Creating the perfect Learning Environment
         </h2>
       </div>
-      <p class="facilities_text">From classrooms to sports grounds, every facility atNaalya is built to nurture potential and encourage discovery.</p>
+      <p class="facilities_text">From classrooms to sports grounds, every facility here is built to nurture potential and encourage discovery.</p>
     </div>
 
     <div class="facilities_grid">
@@ -784,7 +809,7 @@
     <div class="gallery__item wide big">
 
       <img
-        src="images/adimBlock.jpg"
+        src="/images/adimBlock.jpg"
         alt="Administration block building"
         data-index="5"
         loading="lazy"
